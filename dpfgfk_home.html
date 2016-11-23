@@ -1,218 +1,290 @@
 <!DOCTYPE html>
 <html>
 <title>Home</title>
-<link rel="icon" href="stillfavicon.ico" type="image/gif" sizes="16x16">
+<link rel="icon" href="https://googledrive.com/host/0B2nhOq7xnfq1YkE2OGEyVE4xNlE" type="image/gif" sizes="16x16">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://googledrive.com/host/0B2nhOq7xnfq1WVpvVTRaeGwxT2s">
-<link rel="stylesheet" href="https://googledrive.com/host/0B2nhOq7xnfq1YUVSWVlyQVZWLXc">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-dpfgfk.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-
 <style>
-#quart_1:hover ~ #head_1 {transition: 1s; transform: scale(1.3)}
-#quart_2:hover ~ #head_2 {transition: 1s; transform: scale(1.3)}
-#quart_3:hover ~ #head_3 {transition: 1s; transform: scale(1.3)}
-#quart_4:hover ~ #head_4 {transition: 1s; transform: scale(1.3)}
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Lato", sans-serif;
+    }
 
+    body, html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        opacity: 0.7;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+        background-image: url('https://googledrive.com/host/0B2nhOq7xnfq1bDl2RmJnWmZnXzQ');
+        min-height: 100%;
+        0B2nhOq7xnfq1bDl2RmJnWmZnXzQ;
+    }
+
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+        background-image: url('https://googledrive.com/host/0B2nhOq7xnfq1Y3pTbkRoQUI5eUE');
+        min-height: 500px;
+    }
+
+    /* Third image (Contact) */
+    .bgimg-3 {
+        background-image: url("https://googledrive.com/host/0B2nhOq7xnfq1bDl2RmJnWmZnXzQ");
+        min-height: 500px;
+    }
+
+    /* Adjust the position of the parallax image text */
+    .w3-display-middle {
+        bottom: 45%;
+    }
+
+    .w3-wide {
+        letter-spacing: 10px;
+    }
+
+    .w3-hover-opacity {
+        cursor: pointer;
+    }
+
+    #quart_1:hover ~ #head_1 {
+        transition: 1s;
+        transform: scale(1.3);
+    }
+
+    #quart_2:hover ~ #head_2 {
+        transition: 1s;
+        transform: scale(1.3);
+    }
+
+    #quart_3:hover ~ #head_3 {
+        transition: 1s;
+        transform: scale(1.3);
+    }
+
+    #quart_4:hover ~ #head_4 {
+        transition: 1s;
+        transform: scale(1.3);
+    }
 </style>
+<body>
 
-<body id="myPage">
+    <!-- Side Navigation on click -->
+    <nav class="w3-sidenav w3-greyoxide w3-card-2 w3-animate-left" style="display:none;z-index:2">
+        <a href="javascript:void(0)">A</a>
+        <a href="javascript:void(0)">B</a>
+        <a href="javascript:void(0)">C</a>
+        <a href="javascript:void(0)">D</a>
+        <a href="javascript:void(0)">E</a>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-xlarge w3-text white">Close <i class="fa fa-remove"></i></a>
+    </nav>
 
-<!-- Side Navigation on click -->
-<nav class="w3-sidenav w3-greyoxide w3-card-2 w3-animate-left" style="display:none;z-index:2">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-xlarge w3-text white">Close
-    <i class="fa fa-remove"></i>
-  </a>
-  <a href="javascript:void(0)">A</a>
-  <a href="javascript:void(0)">B</a>
-  <a href="javascript:void(0)">C</a>
-  <a href="javascript:void(0)">D</a>
-  <a href="javascript:void(0)">E</a>
-</nav>
-
-<!-- Navbar -->
-<div class="w3-top">
- <ul class="w3-navbar w3-theme-d2 w3-left-align w3-large">
-  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-    <a class="w3-hover-greyoxide w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  </li>
-  <li><a href="#" class="w3-redoxide"><img src="animatedfavicon.ico" class="w3-margin-right"></img>dpFgfK.0rG</a></li>
-  <li class="w3-hide-small w3-dropdown-hover">
-    <a href="#" class="w3-hover-greyoxide" title="Links to my personal pages">Internal <i class="fa fa-caret-down"></i></a>     
-    <div class="w3-dropdown-content w3-concretewhite w3-card-4">
-      <a href="#">Blog</a>
-      <a href="#">Project Log</a>
-      <a href="#">YouTube</a>
-      <a href="#">LinkedIn</a>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <ul class="w3-navbar w3-theme-d2 w3-left-align w3-large">
+            <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+                <a class="w3-hover-greyoxide w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+            </li>
+            <li><a href="#" class="w3-redoxide"><img src="https://googledrive.com/host/0B2nhOq7xnfq1YkE2OGEyVE4xNlE" class="w3-margin-right"></img>dpFgfK.0rG</a></li>
+            <li class="w3-hide-small w3-dropdown-hover">
+                <a href="#" class="w3-hover-greyoxide" title="Links to my personal pages">Internal <i class="fa fa-caret-down"></i></a>
+                <div class="w3-dropdown-content w3-concretewhite w3-card-4">
+                    <a href="http://dpfgfkblog.blogspot.ie">Blog</a>
+                    <a href="http://dpfgfkprojects.blogspot.ie">Project Log</a>
+                    <a href="https://www.youtube.com/channel/UCV6VWIJk8TCra2JK7lfduSA/featured">YouTube</a>
+                    <a href="https://ie.linkedin.com/in/diarmuid-kelleher-74b020109">LinkedIn</a>
+                </div>
+            </li>
+            <li class="w3-hide-small w3-dropdown-hover">
+                <a href="#" class="w3-hover-greyoxide" title="All about me">History <i class="fa fa-caret-down"></i></a>
+                <div class="w3-dropdown-content w3-concretewhite w3-card-4">
+                    <a href="http://dpfgfkmyself.blogspot.ie/">Me, Myself and I</a>
+                    <a href="http://dpfgfkaccolades.blogspot.ie/">Accolades to Date</a>
+                    <a href="http://dpfgfkscouting.blogspot.ie/">Scouting</a>
+                    <a href="http://dpfgfkchitty.blogspot.ie/">Chitty</a>
+                    <a href="http://dpfgfkcollege.blogspot.ie/">Education</a>
+                    <a href="http://dpfgfkwork.blogspot.ie/">Employment</a>
+                </div>
+            </li>
+            <li class="w3-hide-small w3-dropdown-hover">
+                <a href="#" class="w3-hover-greyoxide" title="Links to external sites">External <i class="fa fa-caret-down"></i></a>
+                <div class="w3-dropdown-content w3-concretewhite w3-card-4">
+                    <a href="https://www.dcu.ie">DCU</a>
+                    <a href="http://www.larchhill.org/">Larch Hill</a>
+                    <a href="http://www.portlickscoutcampsite.com/">Portlick</a>
+                </div>
+            </li>
+            <li class="w3-hide-small w3-dropdown-hover">
+                <a href="#" class="w3-hover-greyoxide" title="Purchase merchandise">Shop <i class="fa fa-caret-down"></i></a>
+                <div class="w3-dropdown-content w3-concretewhite w3-card-4">
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8XV84TMVF6TXQ">Care to help me out?</a>
+                </div>
+            </li>
+        </ul>
     </div>
-  </li>
-  <li class="w3-hide-small w3-dropdown-hover">
-    <a href="#" class="w3-hover-greyoxide" title="All about me">History <i class="fa fa-caret-down"></i></a>     
-    <div class="w3-dropdown-content w3-concretewhite w3-card-4">
-      <a href="#">Me, Myself and I</a>
-      <a href="#">Accolades to Date</a>
-      <a href="#">Scouting</a>
-      <a href="#">Chitty</a>
-      <a href="#">College</a>
-      <a href="#">Work</a>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-opacity w3-display-container">
+        <div class="w3-display-middle">
+            <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">Welcome to dpFgfK.0rG</span>
+        </div>
     </div>
-  </li>
-  <li class="w3-hide-small w3-dropdown-hover">
-    <a href="#" class="w3-hover-greyoxide" title="Links to external sites">External <i class="fa fa-caret-down"></i></a>     
-    <div class="w3-dropdown-content w3-concretewhite w3-card-4">
-      <a href="https://www.dcu.ie">DCU</a>
-      <a href="http://www.larchhill.org/">Larch Hill</a>
-      <a href="https://portlickcampsite.com">Portlick</a>
+
+    <!-- Container (About Section) -->
+    <div class="w3-container w3-padding-64 w3-theme-l5" id="about">
+        <div class="w3-container w3-padding-48 w3-center">
+            <h2>"A jack of all trades, a master of none, <br> though oft' better than just a master of one"</h2>
+            <p></p>
+
+            <div class="w3-row">
+                <br>
+
+                <div class="w3-quarter">
+                    <svg id="quart_1" position=absolute height=100% width=100%>
+                        <circle cx=50% cy=50% r=25% fill="#4C0000" class="w3-hover-opacity" />
+                    </svg>
+                    <h3 id="head_1">Explorer</h3>
+                    <p>"the willingness to dive into the depths of the unknown"</p>
+                </div>
+
+                <div class="w3-quarter">
+                    <svg id="quart_2" height=100% width=100%>
+                        <circle cx=50% cy=50% r=25% fill="#F2F2F2" class="w3-hover-opacity" />
+                    </svg>
+                    <h3 id="head_2">Academic</h3>
+                    <p>"the capability and desire to develop, learn and grow"</p>
+                </div>
+
+                <div class="w3-quarter">
+                    <svg id="quart_3" height=100% width=100%>
+                        <circle cx=50% cy=50% r=25% fill="#00264C" class="w3-hover-opacity" />
+                    </svg>
+                    <h3 id="head_3">Gentleman</h3>
+                    <p>"the primal want to deliver upmost respect, always"</p>
+                </div>
+
+                <div class="w3-quarter">
+                    <svg id="quart_4" height=100% width=100%>
+                        <circle cx=50% cy=50% r=25% fill="#808080" class="w3-hover-opacity" />
+                    </svg>
+                    <h3 id="head_4">Philanthropist</h3>
+                    <p>"the drive to give of ones time and reputation selflessly"</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-section">
+                <img src="https://googledrive.com/host/0B2nhOq7xnfq1emVRelBrcHZkMU0" style="width:33%" class="w3-circle" alt="The One and Only">
+            </div>
+
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-hide-small w3-section">
+                <p>I bet you're wondering what you're doing here...<br> Quite frankly, so am I!</p>
+                <p>I'm not sure if you've noticed, but this website is currently being updated.<br> Come back soon and I should have things up and running!</p>
+            </div>
+        </div>
     </div>
-  </li>
- </ul>
-</div>
 
-<!-- Navbar on small screens -->
-<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:43px;">
-  <ul class="w3-navbar w3-left-align w3-large w3-theme">
-    <li><a href="#">Link 1</a></li>
-    <li><a href="#">Link 2</a></li>
-    <li><a href="#">Link 3</a></li>
-  </ul>
-</div>
-
-<div class="w3-display-container w3-animate-opacity">
-  <img class="testimg" src="dpfgfk_org.png" alt="Two heads are better than one" style="width:100%;max-height:600px;margin-left: auto;margin-right: auto">
-</div>
-
-<!-- Modal -->
-<div id="id01" class="w3-modal">
-    <div class="w3-modal-content w3-card-8 w3-animate-top">
-      <header class="w3-container w3-redoxide"> 
-        <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn"><i class="fa fa-remove"></i></span>
-        <h4>Oh snap! We just showed you a modal..</h4>
-        <h5>Because we can <i class="fa fa-smile-o"></i></h5>
-      </header>
-      <div class="w3-container">
-        <p>Cool huh? Ok, enough teasing around..</p>
-        <p>Go to our <a class="w3-btn" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
-      </div>
-      <footer class="w3-container w3-redoxide">
-        <p>Modal footer</p>
-      </footer>
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-light-grey w3-wide">My work:</span>
+        </div>
     </div>
-</div>
 
-<!-- Container -->
-<div class="w3-container w3-padding-48 w3-center">
-<h2>"A jack of all trades, a master of none, <br> though oft' better than just a master of one"</h2>
-<p></p>
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-container w3-padding-64 w3-theme-l5">
+        <div class="w3-padding-16"><span class="w3-xlarge w3-border-redoxide w3-bottombar">My Work:</span></div>
+        <p class="w3-center"><em>Click on an image to make it bigger:</em></p><br>
 
-<div class="w3-row"><br>
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m3">
+                <img src="https://googledrive.com/host/0B2nhOq7xnfq1TWt5VDVLZEZncEk" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
 
-<div class="w3-quarter">
-    <svg id="quart_1" position=absolute height=100% width=100%>
-  <circle cx=50% cy=50% r=25% fill="#4C0000" class="w3-hover-opacity" />
-</svg>
-  <h3 id="head_1">Explorer</h3>
-  <p>"the willingness to dive into the depth of the unknown"</p>
-</div>
+            <div class="w3-col m3">
+                <img src="https://googledrive.com/host/0B2nhOq7xnfq1dVdVa0FONlU5Yk0" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
 
-<div class="w3-quarter">
-    <svg id="quart_2" height=100% width=100%>
-  <circle cx=50% cy=50% r=25% fill="#F2F2F2" class="w3-hover-opacity" />
-</svg>
-  <h3 id="head_2">Academic</h3>
-  <p>"the capability and desire to develop, learn and grow"</p>
-</div>
+            <div class="w3-col m3">
+                <img src="https://googledrive.com/host/0B2nhOq7xnfq1X0gwaGx2RVJSUWM" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
 
-<div class="w3-quarter">
-    <svg id="quart_3" height=100% width=100%>
-  <circle cx=50% cy=50% r=25% fill="#00264C" class="w3-hover-opacity" />
-</svg>
-  <h3 id="head_3">Gentleman</h3>
-  <p>"the primal want to deliver upmost respect, always"</p>
-</div>
+            <div class="w3-col m3">
+                <img src="https://googledrive.com/host/0B2nhOq7xnfq1dURia1FGbUc4bFE" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+        </div>
 
-<div class="w3-quarter">
-    <svg id="quart_4" height=100% width=100%>
-  <circle cx=50% cy=50% r=25% fill="#808080" class="w3-hover-opacity" />
-</svg>
-  <h3 id="head_4">Philanthropist</h3>
-  <p>"the drive to give of ones time and reputation selflessly"</p>
-</div>
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m3">
+                <img src="https://googledrive.com/host/0B2nhOq7xnfq1aWstRk5ReHkzMDA" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
 
-</div>
-</div>
+            <div class="w3-col m3">
+                <img src="https://googledrive.com/host/0B2nhOq7xnfq1WnNEN2NkUE4xRXM" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
 
-<!-- Row -->
-<div class="w3-row-padding w3-padding-64 w3-theme-l1">
+            <div class="w3-col m3">
+                <img src="https://googledrive.com/host/0B2nhOq7xnfq1RHdvWHBJaVJhV28" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
 
-<div class="w3-quarter">
-<h2>My Portfolio</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card-2 w3-concretewhite">
-  <img src="img_fjords.jpg" alt="Vernazza" style="width:100%">
-  <div class="w3-container">
-  <h3>Customer 1</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  </div>
-  </div>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card-2 w3-concretewhite">
-  <img src="img_lights.jpg" alt="Cinque Terre" style="width:100%">
-  <div class="w3-container">
-  <h3>Customer 2</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  </div>
-  </div>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card-2 w3-concretewhite">
-  <img src="img_mountains.jpg" alt="Monterosso" style="width:100%">
-  <div class="w3-container">
-  <h3>Customer 3</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  </div>
-  </div>
-</div>
-
-</div>
-
-<!-- Container -->
-<div class="w3-container" style="position:relative">
-  <a onclick="w3_open()" class="w3-btn-floating-large w3-greyoxide" style="position:absolute;top:-28px;right:24px;z-index:0;">
-  <i class="fa fa-plus"></i></a>
-</div>
-
-<!-- Container -->
-<div class="w3-container w3-padding-64 w3-theme-l5">
-  <div class="w3-row">
-    <div class="w3-col m5">
-    <div  class="w3-padding-16"><span class="w3-xlarge w3-border-redoxide w3-bottombar">Contact</span></div>
-      <p><i class="fa fa-map-marker w3-text-redoxide w3-xlarge"></i>  Carlow, Lenister, Ireland</p>
-      <p><i class="fa fa-envelope-o w3-text-redoxide w3-xlarge"></i>  info@dpfgfk.org</p>
+            <div class="w3-col m3">
+                <img src="https://googledrive.com/host/0B2nhOq7xnfq1RS03WGRpcVFxWUE" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
-<!-- Google Maps -->
-<div id="googleMap" style="width:100%;height:400px;"></div>
-<script src="http://maps.googleapis.com/maps/api/js"></script>
-<script>
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">X</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" style="max-width:100%">
+        </div>
+    </div>
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-light-grey w3-wide">About me:</span>
+        </div>
+    </div>
+
+    <!-- Container -->
+    <div class="w3-container" style="position:relative">
+        <a onclick="w3_open()" class="w3-btn-floating-large w3-greyoxide" style="position:absolute;top:-28px;right:24px;z-index:0;">
+            <i class="fa fa-plus"></i>
+        </a>
+    </div>
+
+    <!-- Container -->
+    <div class="w3-container w3-padding-64 w3-theme-l5">
+        <div class="w3-row">
+            <div class="w3-col m5">
+                <div class="w3-padding-16"><span class="w3-xlarge w3-border-redoxide w3-bottombar">Contact</span></div>
+                <p><i class="fa fa-map-marker w3-text-redoxide w3-xlarge"></i>  Carlow, Lenister, Ireland</p>
+                <p><i class="fa fa-envelope-o w3-text-redoxide w3-xlarge"></i>  info@dpfgfk.org</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Maps -->
+    <div id="googleMap" style="width:100%;height:400px;"></div>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
 var myCenter = new google.maps.LatLng(52.9076198, -6.9398271);
 
 function initialize() {
@@ -234,45 +306,44 @@ marker.setMap(map);
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+    </script>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-  <h4>Follow Us</h4>
-  <a class="w3-btn-floating w3-redoxide" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
-  <a class="w3-btn-floating w3-redoxide" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
-  <a class="w3-btn-floating w3-redoxide" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
-  <a class="w3-btn-floating w3-redoxide w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-<br>
-    <span class="w3-text w3-padding w3-redoxide w3-hide-small">Go To Top</span>   
-    <a class="w3-btn w3-theme" href="#myPage"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up"></i></span></a>
-  </div>
-</footer>
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+        <h4>Follow Us</h4>
+        <a class="w3-btn-floating w3-redoxide" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+        <a class="w3-btn-floating w3-redoxide" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+        <a class="w3-btn-floating w3-redoxide" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+        <a class="w3-btn-floating w3-redoxide w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+        <br>
+        <span class="w3-text w3-padding w3-redoxide w3-hide-small">Go To Top</span>
+        <a class="w3-btn w3-theme" href="#">
+            <span class="w3-xlarge">
+                <i class="fa fa-chevron-circle-up"></i>
+            </span>
+        </a>
+        </div>
+    </footer>
 
-<!-- Script For Side Navigation -->
-<script>
-function w3_open() {
-    document.getElementsByClassName("w3-sidenav")[0].style.width = "300px";
-    document.getElementsByClassName("w3-sidenav")[0].style.textAlign = "center";
-    document.getElementsByClassName("w3-sidenav")[0].style.fontSize = "40px";
-    document.getElementsByClassName("w3-sidenav")[0].style.paddingTop = "10%";
-    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
-}
-function w3_close() {
-    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+    <!-- Add Google Maps -->
+    <script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
 }
 
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
     }
 }
-</script>
+    </script>
 
 </body>
 </html>
